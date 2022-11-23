@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <LangVersion>preview</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Files\Fred.html" />
+      <EmbeddedResource Include="Files\Fred.html" LogicalName="Fred" />
+      <None Remove="Files\Slava.html" />
+      <EmbeddedResource Include="Files\Slava.html" LogicalName="Slava" />
+    </ItemGroup>
+
+</Project>
